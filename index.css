@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
+
+body {
+  min-height: 100vh;
+  background: #121725;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.background_image {
+  background: #54e6af;
+  mix-blend-mode: multiply;
+  opacity: 0.8;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.logo {
+  margin-top: 62px;
+}
+
+.first_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.h1_text1 {
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #54e6af;
+  width: 327px;
+  margin-top: 57px;
+}
+
+.p_1 {
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #c2cbe5;
+  margin-top: 16px;
+  width: 327px;
+}
+
+.icons_box1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 23px;
+  padding-left: 6px;
+  padding-right: 6px;
+  box-sizing: border-box;
+}
+
+input {
+  margin-top: 47px;
+  background: #2c344b;
+  border-radius: 28px;
+  width: 327px;
+  border: none;
+  height: 46px;
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  text-indent: 32px;
+}
+
+input[placeholder="Email address"] {
+  color: white;
+}
+
+.request {
+  background: #54e6af;
+  box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
+  border-radius: 28px;
+  margin-top: 16px;
+  border: none;
+  width: 327px;
+  height: 46px;
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #121725;
+}
