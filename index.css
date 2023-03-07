@@ -18,6 +18,10 @@ body {
   display: block;
 }
 
+.background_image_desktop {
+  display: none;
+}
+
 .background_image_tablet {
   display: none;
 }
@@ -30,9 +34,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 24px;
-  padding-right: 24px;
-  box-sizing: border-box;
   width: 100%;
 }
 
@@ -72,13 +73,38 @@ body {
   justify-content: space-between;
   width: 100%;
   margin-top: 23px;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 30px;
+  padding-right: 30px;
   box-sizing: border-box;
+  order: 0;
+}
+
+.email_button_box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 47px;
+}
+
+.error_box {
+  height: 14px;
+  padding-top: 8px;
+}
+
+.error_none {
+  display: none;
+}
+
+.error {
+  display: block;
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fb3e3e;
 }
 
 input {
-  margin-top: 47px;
   background: #2c344b;
   border-radius: 28px;
   width: 327px;
@@ -95,11 +121,12 @@ input {
 
 input::placeholder {
   color: white;
+  mix-blend-mode: normal;
+  opacity: 0.5;
 }
 
 .request {
   background: #54e6af;
-  box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
   border-radius: 28px;
   margin-top: 16px;
   border: none;
@@ -111,6 +138,17 @@ input::placeholder {
   font-size: 14px;
   line-height: 28px;
   color: #121725;
+  cursor: pointer;
+}
+
+.request:hover {
+  background: #b3ffe2;
+  border-radius: 28px;
+  transition: ease 0.3s;
+}
+
+.green_dots {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -119,6 +157,10 @@ input::placeholder {
   }
 
   .background_image {
+    display: none;
+  }
+
+  .background_image_desktop {
     display: none;
   }
 
@@ -137,7 +179,7 @@ input::placeholder {
   .first_container {
     align-items: flex-start;
     padding-left: 40px;
-    width: 645px;
+    width: 635px;
     background: #121725;
     margin-top: 152px;
   }
@@ -151,7 +193,7 @@ input::placeholder {
     text-transform: uppercase;
     color: #54e6af;
     text-align: initial;
-    width: 600px;
+    width: 635px;
     margin-top: 93px;
   }
 
@@ -165,5 +207,131 @@ input::placeholder {
     margin-top: 31px;
     color: #c2cbe5;
     width: 445px;
+  }
+
+  .icons_box1 {
+    order: 1;
+    margin-top: 64px;
+    gap: 40px;
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+
+  input {
+    width: 427px;
+    height: 56px;
+  }
+
+  input::placeholder {
+    padding-right: 177px;
+  }
+
+  .email_button_box {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .request {
+    margin-top: 0;
+    width: 162px;
+    position: relative;
+    right: 167px;
+    background: #54e6af;
+    border-radius: 28px;
+  }
+
+  .error_box{
+    padding-left: 32px;
+  }
+
+  .spotify {
+    height: 29px;
+    width: 96px;
+  }
+
+  .apple {
+    width: 78px;
+    height: 29px;
+  }
+
+  .google {
+    height: 20px;
+    width: 125px;
+  }
+
+  .pocket {
+    width: 129px;
+    height: 26px;
+  }
+
+  .footer {
+    padding-left: 30px;
+    padding-top: 153px;
+  }
+
+  .green_dots {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .background_image {
+    display: none;
+  }
+
+  .background_image_tablet {
+    display: none;
+  }
+
+  .background_image_desktop {
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    top: 130px;
+  }
+
+  .logo {
+    padding-left: 165px;
+    margin-top: 102px;
+  }
+
+  .first_container {
+    margin-top: 103px;
+    padding-left: 165px;
+    width: 723px;
+  }
+
+  .h1_text1 {
+    font-family: "Chivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 62px;
+    text-transform: uppercase;
+    color: #54e6af;
+    width: 665px;
+    margin-top: 88px;
+  }
+
+  .p_1 {
+    margin-top: 24px;
+  }
+
+
+
+  .footer {
+    padding-left: 0;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    padding-bottom: 78px;
+  }
+
+  .green_dots {
+    margin-top: -54px;
   }
 }
