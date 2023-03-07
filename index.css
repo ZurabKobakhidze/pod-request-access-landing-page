@@ -6,7 +6,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
 }
 
 .background_image {
@@ -16,6 +15,11 @@ body {
   width: 100%;
   position: absolute;
   z-index: -1;
+  display: block;
+}
+
+.background_image_tablet {
+  display: none;
 }
 
 .logo {
@@ -43,6 +47,10 @@ body {
   color: #54e6af;
   width: 327px;
   margin-top: 57px;
+}
+
+.h1_text1_white {
+  color: white;
 }
 
 .p_1 {
@@ -82,9 +90,10 @@ input {
   font-size: 14px;
   line-height: 28px;
   text-indent: 32px;
+  color: white;
 }
 
-input[placeholder="Email address"] {
+input::placeholder {
   color: white;
 }
 
@@ -102,4 +111,59 @@ input[placeholder="Email address"] {
   font-size: 14px;
   line-height: 28px;
   color: #121725;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    align-items: flex-start;
+  }
+
+  .background_image {
+    display: none;
+  }
+
+  .background_image_tablet {
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+
+  .logo {
+    padding-left: 40px;
+    margin-top: 50px;
+  }
+
+  .first_container {
+    align-items: flex-start;
+    padding-left: 40px;
+    width: 645px;
+    background: #121725;
+    margin-top: 152px;
+  }
+
+  .h1_text1 {
+    font-family: "Chivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #54e6af;
+    text-align: initial;
+    width: 600px;
+    margin-top: 93px;
+  }
+
+  .p_1 {
+    font-family: "Chivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: inherit;
+    margin-top: 31px;
+    color: #c2cbe5;
+    width: 445px;
+  }
 }
